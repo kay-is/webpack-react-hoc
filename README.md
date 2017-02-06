@@ -1,5 +1,5 @@
 
-Companion repository to this blog post.
+Companion repository to this [blog post](https://dev.to/kayis/lazy-loaded-react-components-with-webpack-2).
 
 ## Setup
 
