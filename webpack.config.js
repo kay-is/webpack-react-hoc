@@ -1,9 +1,9 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 module.exports = {
 
   entry: {
-    react: ["react", "react-dom"],
+    react: ['react', 'react-dom'],
     app: './src/index.js',
   },
 
@@ -13,6 +13,7 @@ module.exports = {
 
   output: {
     filename: '[name].js',
+    chunkFilename: '[name].js',
   },
 
   module: {
@@ -23,6 +24,9 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['react'],
+          plugins: [
+            'syntax-dynamic-import'
+          ]
         },
       },
     ],
@@ -30,4 +34,4 @@ module.exports = {
 
   plugins: [new webpack.optimize.CommonsChunkPlugin({name: 'react'})],
 
-}
+};
