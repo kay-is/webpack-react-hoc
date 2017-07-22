@@ -4,9 +4,7 @@ Companion repository to this [blog post](https://dev.to/kayis/lazy-loaded-react-
 ## Setup
 
 - `npm i`
-- `npm i webpack -g`
-- `npm i http-server -g`
-- `webpack`
-- `http-server -c-1`
+- `npm run build`
+- `npm run start`
 
 Open the URL shown by `http-server` with your browser, open the dev-tools and set throtteling to 3G or something.
